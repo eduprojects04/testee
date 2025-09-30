@@ -8,50 +8,106 @@ body {
 }
 
 /* --- Estilos do Header --- */
-
 header {
-    background-color: rgba(255, 140, 0, 0.9);
-    color: white;
-    padding: 15px 50px;
-    display: flex;
-    border-radius: 20px;
-    justify-content: space-between;
-    align-items: center;
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  background-color: rgba(255, 140, 0, 0.8);
+  color: white;
+  padding: 15px 50px;
+  display: flex;
+  border-radius: 20px;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-.logomarca {
-    font-size: 32px;
-    font-weight: bold;
-    display: flex;
-    align-items: center;
+.logomarca-info {
+  font-weight: bold;
+  font-size: 48px;
+  display: flex;
+  align-items: center;
 }
 
 .header-nav ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  align-items: center;
 }
 
 .header-nav ul li {
-    margin-left: 30px;
+  margin-left: 30px;
+  position: relative;
 }
 
 .header-nav ul li a {
-    color: white;
-    text-decoration: none;
-    font-size: 28px;
-    font-weight: bold;
-    transition: color 0.3s;
+  color: white;
+  text-decoration: none;
+  font-size: 28px;
+  font-weight: bold;
+  transition: color 0.3s;
 }
 
 .header-nav ul li a:hover {
-    color: gold;
-    text-decoration: underline;
+  color: gold;
+  text-decoration: underline;
+}
+
+/* --- Configiguração do SubMenu da aba Nossas Obras --- */
+
+.header-nav .drop-link::after {
+  content: " ▼";
+  font-size: 18px;
+  margin-left: 6px;
+  vertical-align: middle;
+}
+
+.header-nav .submenu {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  left: 0;
+  background-color: rgba(255, 140, 0, 0.8);
+  list-style: none;
+  padding: 8px 0;
+  margin: 0;
+  min-width: 180px;
+  border-radius: 10px;
+  box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+
+  opacity: 0;
+  transform: translateY(-6px);
+  visibility: hidden;
+  transition: opacity 160ms ease, transform 160ms ease, visibility 160ms;
+  z-index: 1100;
+}
+
+.header-nav .submenu li {
+  margin: 0;
+}
+
+.header-nav .submenu li a {
+  display: flex;
+  padding: 10px 16px;
+  font-size: 20px;
+  font-weight: 700;
+  color: white;
+  text-decoration: none;
+  transition: background 0.15s, color 0.15s;
+}
+
+.header-nav .submenu li a:hover {
+  background: rgba(0,0,0,0.06);
+  color: gold;
+}
+
+.header-nav .dropdown:hover > .submenu,
+.header-nav .dropdown:focus-within > .submenu {
+  opacity: 1;
+  transform: translateY(0);
+  visibility: visible;
 }
 
 /* --- Configurações adicionais de navegação --- */
@@ -74,33 +130,16 @@ section {
 /* --- Estilos do Footer --- */
 
 footer {
-    background-color: rgba(0, 0, 0, 0.9);
+    background-color: rgba(0, 100, 0, 0.8);
     color: #fff;
     padding: 30px;
     border-radius: 20px;
     text-align: center;
 }
 
-.footer-content {
-    margin-bottom: 20px;
-}
-
-.footer-nav a {
-    color: orange;
-    text-decoration: none;
-    margin: 0 15px;
-    font-size: 18px;
-    transition: color 0.3s;
-}
-
-.footer-nav a:hover {
-    color: orangered;
-    text-decoration: underline;
-}
-
 .footer-copyrigt {
     border-top: 1px solid rgba(255, 255, 255, 0.2);
     padding-top: 10px;
-    font-size: 16px;
-    color: #aaa;
+    font-size: 18px;
+    color: black;
 }
