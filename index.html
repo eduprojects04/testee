@@ -10,20 +10,31 @@
 <body id="topo">
 
   <header>
-    <div class="logomarca">
+    <div class="logomarca-info">
     <img src="logomarca.png" height="100px" style="margin-left: 40px; margin-right: 20px;">
-    <span style="font-size: 48px; color: green;">Eco</span>&nbsp;<span style="font-size: 48px; color: orangered;">Art</span>
+    <span style="color: green;">Eco</span>&nbsp;<span style="color: orangered;">Art</span>
     </div>
     <nav class="header-nav">
-        <ul>
-            <li><a href="#topo">Início</a></li>
-            <li><a href="#obras" style="margin-right: 40px;">Nossas Obras</a></li>
+    <ul>
+      <li><a href="#topo">Início</a></li>
+
+      <!-- Dropdown -->
+      <li class="dropdown">
+        <a href="#obras" class="drop-link">Nossas Obras</a>
+        <ul class="submenu" aria-label="submenu">
+          <li><a href="#vaso-caixinha">Vaso de Caixinha</a></li>
+          <li><a href="#vaso-barbante">Vaso de Barbante</a></li>
+          <li><a href="#luminaria">Luminária</a></li>
         </ul>
-    </nav>
-  </header>
+      </li>
+    </ul>
+  </nav>
+</header>
 
   <!--Primeira Janela (Informações iniciais)-->
+
   <div class="janela">
+    <section id="info">
       <h1 style="color: orangered; font-size: 48px; text-align: center; ">✂️ Artesanato Sustentável ✂️</h1>
 
       <h2 style="color: orange; font-size: 30px;">O que é o Artesanato Sustentável?</h2>
@@ -79,12 +90,14 @@
     </div>
 
   <!--Segunda Janela (Obras artesãs)-->
+
   <div class="janela">
     <section id="obras">
       <h1 style="color: orangered; font-size: 48px; text-align: center;">🎨 Obras Artesãs que Fizemos 🎨</h1>
       <h1 style="color: gold; font-size: 36px; text-align: center; text-decoration: underline;">#INICIE JÁ!</h1>
 
-      <center>
+      <section id="vaso-caixinha">
+        <center>
         <h2 style="color: orange; font-size: 40px;">▶︎ Vaso de caixinha de leite ◀︎</h2>
         <div>
           <img src="pas_vaso.png" width="50%" height="50%" style="margin-right: 40px;">
@@ -92,32 +105,34 @@
         </div>
         <a href="pas_vaso.png"><button style="color: #000000; font-size: 24px; font-family: comic sans ms; border-bottom: solid; border-color: #ff751f; border-radius: 15px;">➲ Clique aqui para abrir o passo a passo!</button></a>
         <br><br>
-      </center>
-      <b style="font-size: 24px; color: #000000;">
-        &nbsp;Materiais necessários:
-      </b>
-      <ul style="color: #000000; font-size: 24px;">
-        <li>4 Caixinhas de leite;</li>
-        <li>Fita crepe;</li>
-        <li>Massa Corrida;</li>
-        <li>Tinta acrílica ou de tecido (cor de sua preferência);</li>
-        <li>Molde do vaso. <a href="molde.png" style="text-decoration: underline; ">Abra o molde aqui!</a></li>
-      </ul>
-      <b style="font-size: 24px; color: #000000;">
-        &nbsp;Passo a passo:
-      </b>
-      <ol style="color: #000000; font-size: 24px;">
-        <li>Lave bem a caixinha por dentro e fora, corte e deixe secar;</li>
-        <li>Com as medidadas do molde, faça as marcações para o corte;</li>
-        <li>Depois de cortar as peças, junte as laterais com fita crepe;</li>
-        <li>Tampe o fundo do vaso com a parte "Fundo" do molde do vaso;</li>
-        <li>Espalhe a massa corrida por todo o vaso, sem deixar nenhum relevo;</li>
-        <li>Com a ajuda de uma espatula dê leve batidinhas para criar um efeito de textura de sua preferência e deixe secar por completo;</li>
-        <li>Com a tinta, pinte o vaso usando sua criatividade.</li>
-        <li>Pronto!</li>
-      </ol>
+        </center>
+        <b style="font-size: 24px; color: #000000;">
+          &nbsp;Materiais necessários:
+        </b>
+        <ul style="color: #000000; font-size: 24px;">
+          <li>4 Caixinhas de leite;</li>
+          <li>Fita crepe;</li>
+          <li>Massa Corrida;</li>
+          <li>Tinta acrílica ou de tecido (cor de sua preferência);</li>
+          <li>Molde do vaso. <a href="molde.png" style="text-decoration: underline; ">Abra o molde aqui!</a></li>
+        </ul>
+        <b style="font-size: 24px; color: #000000;">
+          &nbsp;Passo a passo:
+        </b>
+        <ol style="color: #000000; font-size: 24px;">
+          <li>Lave bem a caixinha por dentro e fora, corte e deixe secar;</li>
+          <li>Com as medidadas do molde, faça as marcações para o corte;</li>
+          <li>Depois de cortar as peças, junte as laterais com fita crepe;</li>
+          <li>Tampe o fundo do vaso com a parte "Fundo" do molde do vaso;</li>
+          <li>Espalhe a massa corrida por todo o vaso, sem deixar nenhum relevo;</li>
+          <li>Com a ajuda de uma espatula dê leve batidinhas para criar um efeito de textura de sua preferência e deixe secar por completo;</li>
+          <li>Com a tinta, pinte o vaso usando sua criatividade.</li>
+          <li>Pronto!</li>
+        </ol>
+      </section>
 
-      <center>
+      <section id="vaso-barbante">
+        <center>
         <h2 style="color: orange; font-size: 40px;">▶︎ Vaso de barbante ◀︎</h2>
         <div>
           <img src="pas_bar.png" width="40%" height="40%" style="margin-right: 40px;">
@@ -125,28 +140,30 @@
         </div>
         <a href="pas_bar.png"><button style="color: #000000; font-size: 24px; font-family: comic sans ms; border-bottom: solid; border-color: #ff751f; border-radius: 15px;">➲ Clique aqui para abrir o passo a passo!</button></a>
         <br><br>
-      </center>
-      <b style="font-size: 24px; color: #000000;">
-        &nbsp;Materiais necessários:
-      </b>
-      <ul style="color: #000000; font-size: 24px;">
-        <li>1 Garrafa de vidro;</li>
-        <li>Barbante de cor de sua preferência;</li>
-        <li>Cola quente;</li>
-        <li>Pedrinhas de sua preferência (opcional).</li>
-      </ul>
-      <b style="font-size: 24px; color: #000000;">
-        &nbsp;Passo a passo:
-      </b>
-      <ol style="color: #000000; font-size: 24px;">
-        <li>Lave a garrafa e deixe secar;</li>
-        <li>Cole a ponta do barbante no lado inferior da garrafa;</li>
-        <li>Dê várias voltas de barbante na garrafa passando a cola em alguns pontos para ficar firme;</li>
-        <li>Cole as pedrinhas ou inove criando modelos diferentes.</li>
-        <li>Pronto!</li>
-      </ol>
-
-      <center>
+        </center>
+        <b style="font-size: 24px; color: #000000;">
+          &nbsp;Materiais necessários:
+        </b>
+        <ul style="color: #000000; font-size: 24px;">
+          <li>1 Garrafa de vidro;</li>
+          <li>Barbante de cor de sua preferência;</li>
+          <li>Cola quente;</li>
+          <li>Pedrinhas de sua preferência (opcional).</li>
+        </ul>
+        <b style="font-size: 24px; color: #000000;">
+          &nbsp;Passo a passo:
+        </b>
+        <ol style="color: #000000; font-size: 24px;">
+          <li>Lave a garrafa e deixe secar;</li>
+          <li>Cole a ponta do barbante no lado inferior da garrafa;</li>
+          <li>Dê várias voltas de barbante na garrafa passando a cola em alguns pontos para ficar firme;</li>
+          <li>Cole as pedrinhas ou inove criando modelos diferentes.</li>
+          <li>Pronto!</li>
+        </ol>
+      </section>
+      
+      <section id="luminaria">
+        <center>
         <h2 style="color: orange; font-size: 40px;">▶︎ Luminária personalizada ◀︎</h2>
         <div>
           <img src="pas_garrleds.png" width="50%" height="50%" style="margin-right: 40px;">
@@ -154,41 +171,41 @@
         </div>
         <a href="pas_garrleds.png"><button style="color: #000000; font-size: 24px; font-family: comic sans ms; border-bottom: solid; border-color: #ff751f; border-radius: 15px;">➲ Clique aqui para abrir o passo a passo!</button></a>
         <br><br>
-      </center>
-      <b style="font-size: 24px; color: #000000;">
-        &nbsp;Materiais necessários:
-      </b>
-      <ul style="color: #000000; font-size: 24px;">
-        <li>1 Garrafa de vidro transparente;</li>
-        <li>Tinta guache;</li>
-        <li>1 Pincel;</li>
-        <li>Leds de fada. <a href="https://shopee.com.br/Kit-Rolha-De-Led-Fio-Fada-Garrafa-2m-20-Leds-Branco-Quente-Frio-Colorido-Guirlanda-Decora%C3%A7%C3%A3o-i.335642797.22698356709" style="text-decoration: underline; ">Link para comprar as leds.</a></li>
-      </ul>
-      <b style="font-size: 24px; color: #000000;">
-        &nbsp;Passo a passo:
-      </b>
-      <ol style="color: #000000; font-size: 24px;">
-        <li>Lave a garrafa e deixe secar;</li>
-        <li>Com a ajuda de um pincel, comece desenhando algo de sua preferência e deixe secar;</li>
-        <li>Depois coloque a fita de leds de fada dentro da garrafa, deixando o controlador de leds por fora;</li>
-        <li>E está pronto!</li>
-      </ol>
+        </center>
+        <b style="font-size: 24px; color: #000000;">
+          &nbsp;Materiais necessários:
+        </b>
+        <ul style="color: #000000; font-size: 24px;">
+          <li>1 Garrafa de vidro transparente;</li>
+          <li>Tinta guache;</li>
+          <li>1 Pincel;</li>
+          <li>Leds de fada. <a href="https://shopee.com.br/Kit-Rolha-De-Led-Fio-Fada-Garrafa-2m-20-Leds-Branco-Quente-Frio-Colorido-Guirlanda-Decora%C3%A7%C3%A3o-i.335642797.22698356709" style="text-decoration: underline; ">Link para comprar as leds.</a></li>
+        </ul>
+        <b style="font-size: 24px; color: #000000;">
+          &nbsp;Passo a passo:
+        </b>
+        <ol style="color: #000000; font-size: 24px;">
+          <li>Lave a garrafa e deixe secar;</li>
+          <li>Com a ajuda de um pincel, comece desenhando algo de sua preferência e deixe secar;</li>
+          <li>Depois coloque a fita de leds de fada dentro da garrafa, deixando o controlador de leds por fora;</li>
+          <li>E está pronto!</li>
+        </ol>
 
-      <p style="font-size: 26px; text-align: center; color: orangered; margin-top: 40px;">
-        🌈 <u>Transforme o que seria lixo em arte!</u>
-      </p>
+        <p style="font-size: 26px; text-align: center; color: orangered; margin-top: 40px;">
+          🌈 <u>Transforme o que seria lixo em arte!</u>
+        </p>
     </section>
   </div>
 
   <footer>
-    <div class="footer-content">
-        <p style="font-size: 20px; margin: 5px 0;">✨ Artesanato Sustentável | Projeto: Feira de Empreendedorismo.</p>
-        <p style="font-size: 20px; margin: 5px 0;">Realizado por Eduardo, Eloah e Isabeli P.</p>
+    <div>
+        <p style="font-size: 20px; margin: 5px;">✨ Artesanato Sustentável | Projeto: Feira de Empreendedorismo.</p>
+        <p style="font-size: 20px; margin: 5px; margin-bottom: 20px;">Realizado por Eduardo, Eloah e Isabeli P.</p>
     </div>
     <div class="footer-copyrigt">
         &copy; 2025 Eco Art. Todos os direitos reservados.
     </div>
-</footer>
+  </footer>
 
 </body>
 </html>
